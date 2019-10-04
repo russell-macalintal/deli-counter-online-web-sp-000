@@ -17,5 +17,9 @@ def take_a_number(line_array, name)
 end
 
 def now_serving(line_array)
-
+  if line_array.length < 1
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{line_array.pop()}."
+  end
 end
